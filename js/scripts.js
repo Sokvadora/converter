@@ -9,6 +9,7 @@ $(document).ready(function () {
         inputUsd = $("#usd"),
         inputEur = $("#eur");
 
+    let date, time;
     // Загружаем курсы валют
     $.ajax({
         url: 'https://www.cbr-xml-daily.ru/daily_json.js',
@@ -18,9 +19,18 @@ $(document).ready(function () {
             rates = data.Valute;
             usd = rates.USD.Value;
             eur = rates.EUR.Value;
-            console.log(rates);
-            console.log(usd);
-            console.log(eur);
+            dt = data.Timestamp;
+
+            dtSplit = dt.split('-');
+            daySplit = dtSplit[2].split('T');
+            date = daySplit[0] + '-' + dtSplit[1] + '-' + dtSplit[0];
+
+            time = daySplit[1].split(':');
+            time = time[0] + ':' + time[1];
+
+            $('#date').text(' (Данные на: ' + date + ', ' + time + ')');
+            $('#valUsd').text('USD: ' + usd.toFixed(2) );
+            $('#valEur').text('EUR: ' + eur.toFixed(2) );
         },
         error: function () {
             alert('Не удалось загрузить данные.');
@@ -42,6 +52,7 @@ $(document).ready(function () {
             $('#rub').val('');
             $('#usd').val('');
             $('#eur').val('');
+
         }
     });
 
@@ -83,3 +94,5 @@ $(document).ready(function () {
 
 
 });
+
+ 
