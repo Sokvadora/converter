@@ -27,8 +27,8 @@ $(document).ready(function () {
 
             time = daySplit[1].split(':');
             time = time[0] + ':' + time[1];
-
-            $('#date').text(' (Данные на: ' + date + ', ' + time + ')');
+              
+            $('#date').text(' (На: ' + date + ', ' + time + ')');
             $('#valUsd').text('USD: ' + usd.toFixed(2) );
             $('#valEur').text('EUR: ' + eur.toFixed(2) );
         },
@@ -37,7 +37,7 @@ $(document).ready(function () {
         }
     });
 
-
+  
     //вводим рубль
     $('#rub').bind({
         keyup: function () {

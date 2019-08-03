@@ -4,40 +4,76 @@
 <head>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> converter </title>
 </head>
 
 <body>
+    <div class="parent">
+        <div class="container text-center">
+            <label class="px-3 bgrnd">
 
-    <label for="rub"> RUB </label>
-    <input id="rub" type="text">
-    <br><br>
+                <div class="row ">
+                    <div class="col text-center">
+                        <h3> <label id="header">Конвертер валют </label></h3>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div id="calc" class="col-lg-6 col-md-6 col-sm-12 text-center">
+
+                        <label class="currency" for="rub"> RUB </label>
+                        <input class="rounded " id="rub" type="text">
+                        <br>
+
+                        <label class="currency" for="usd"> USD </label>
+                        <input class="rounded" id="usd" type="text">
+                        <br>
+
+                        <label class="currency" for="usd"> EUR </label>
+                        <input class="rounded" id="eur" type="text">
+
+                    </div>
+
+                    <div id="infoBlock" class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-12 text-center">
+
+                            <label id="bord">
+                                <label id="valUsd"> </label>
+                                <label id="valEur"> </label>
+                            </label>
+
+                        </div>
+
+                        <label id="date"> </label>
+
+                    </div>
+            </label>
+        </div>
+
+        <div class="row row-centered">
+            <div class="col  text-center">
+
+                <label id="credits"> Курсы валют предоставлены: <a href="https://www.cbr-xml-daily.ru/">Курсы ЦБ РФ в
+                        XML и JSON, API</a>
+                    <br>@Elena Suyazova</label>
+
+            </div>
+        </div>
 
 
-    <label for="usd"> USD </label>
-    <input id="usd" type="text">
-    <br><br>
-
-
-    <label for="usd"> EUR </label>
-    <input id="eur" type="text">
-    <br><br>
-
-     <label id="valUsd" > </label>
-     <br><br>
-     <label id="valEur" > </label>
-     <br><br>
-
-    <label id="info"> Курсы валют предоставлены: <a href="https://www.cbr-xml-daily.ru/">Курсы ЦБ РФ в XML и JSON, API</a></label>
-   <label id="date" >  </label>
-
-   
+    </div>
 
     <script src="js/scripts.js"></script>
-    
+
 </body>
 
 </html>
