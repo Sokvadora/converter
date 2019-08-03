@@ -10,3 +10,5 @@
 *EUR-RUB, EUR-USD. 
 
 Обновляемые данные с Центробанка РФ.  
+
+Интерфейс проекта: interface_screenshot.PNG
