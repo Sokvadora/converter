@@ -1,0 +1,83 @@
+ .parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+}
+
+
+
+ .bgrnd{
+    background: linear-gradient(45deg,rgb(203, 203, 216),rgb(123, 213, 224) ); 
+    border-radius: 80% 7% / 80%;
+    padding: 50px 
+ }
+
+
+ .currency{
+    font-size: 24px; 
+    color:#696868d7; 
+    margin: 10px 5px; 
+    font-family: 'Comfortaa'
+}
+
+#header{
+    padding: 0 0 20px 0; 
+    font-family: 'Comfortaa' 
+}
+
+#calc{
+    padding: 0 0 0 15px
+}
+ 
+#infoBlock{
+    padding: 10px 15px 0 0
+}
+
+#bord{
+    border: 2px solid rgba(255, 255, 255, 0.616); 
+    border-radius: 10px;
+}
+
+#valUsd{
+    font-size: 24px; 
+    color:#ffffff; 
+    margin: 10px 5px 5px 5px; 
+    font-family: 'Comfortaa'
+}
+
+#valEur{
+    font-size: 24px; 
+    color:#ffffff; 
+    margin: 5px 5px 10px 5px; 
+    font-family: 'Comfortaa'
+}
+
+#date{
+    font-size: 14px; 
+    color:#414040b2; 
+    font-family: 'Comfortaa';  
+    margin: 5px 0;
+}
+
+#credits{
+    padding: 30px 100px 0 50px;
+    font-size: 14px; 
+    color:rgb(235, 248, 250); 
+    padding: 30px 100px 0 50px;
+     
+}
+
+input{
+    border: none
+ }
+
+ h3 {
+color: #fff
+ }
